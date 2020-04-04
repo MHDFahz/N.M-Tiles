@@ -2,6 +2,7 @@ export const storeProducts = [
   {
     id: 1,
     title: "Calicut Roofing Tile\n(Single Groove)",
+    item: "Roofing Tile",
     img: "img/product-1.png",
     price: 10,
     company: "Calicut Tile Company",
@@ -14,6 +15,7 @@ export const storeProducts = [
   {
     id: 2,
     title: "Calicut Roofing Tile\n (Double Groove)",
+    item: "Roofing Tile",
     img: "img/product-2.png",
     price: 16,
     company: "Calicut Tile Company",
@@ -26,6 +28,7 @@ export const storeProducts = [
   {
     id: 3,
     title: "Calicut Roofing Tile\n (Glass Tile)",
+    item: "Glass Tile",
     img: "img/product-3.png",
     price: 8,
     company: "Calicut Tile Company",
@@ -38,6 +41,7 @@ export const storeProducts = [
   {
     id: 4,
     title: "Calicut Roofing Tile\n (Ridge Tile)",
+    item: "Ridge Tile",
     img: "img/product-4.png",
     price: 18,
     company: "Calicut Tile Company",
@@ -50,6 +54,7 @@ export const storeProducts = [
   {
     id: 5,
     title: "Calicut Roofing Tile\n (Decorative Ridge)",
+    item: "Ridge Tile",
     img: "img/product-5.png",
     price: 24,
     company: "Calicut Tile Company",
@@ -62,6 +67,7 @@ export const storeProducts = [
   {
     id: 6,
     title: "Calicut Roofing Tile\n (Taylor Tile)",
+    item: "Ceiling Tile",
     img: "img/product-6.png",
     price: 17,
     company: "Calicut Tile Company",
@@ -74,6 +80,7 @@ export const storeProducts = [
   {
     id: 7,
     title: "Calicut Roofing Tile\n (Ceiling Tile)",
+    item: "Ceiling Tile",
     img: "img/product-7.png",
     price: 30,
     company: "Calicut Tile Company",
@@ -86,6 +93,7 @@ export const storeProducts = [
   {
     id: 8,
     title: "Calicut Ventilator Tile\n (Single)",
+    item: "Ventilator Tile",
     img: "img/product-8.png",
     price: 2,
     company: "Calicut Tile Company",
@@ -96,7 +104,8 @@ export const storeProducts = [
   },
   {
     id: 9,
-    title: "Calicut Roofing Tile\n (Ceiling Tile)",
+    title: "Calicut Roofing Tile\n (Double)",
+    item: "Ventilator Tile",
     img: "img/product-9.png",
     price: 10,
     company: "Calicut Tile Company",
@@ -108,6 +117,7 @@ export const storeProducts = [
   {
     id: 10,
     title: "Calicut Roofing Tile\n (Ceiling Tile)",
+    item: "Ceiling Tile",
     img: "img/product-10.png",
     price: 16,
     company: "Calicut Tile Company",
@@ -119,6 +129,7 @@ export const storeProducts = [
   {
     id: 11,
     title: "Calicut Roofing Tile\n (Dome - A",
+    item: "Dome",
     img: "img/product-11.png",
     price: 8,
     company: "Calicut Tile Company",
@@ -130,10 +141,50 @@ export const storeProducts = [
   {
     id: 12,
     title: "Calicut Roofing Tile\n (Dome - B)",
+    item: "Dome",
     img: "img/product-12.png",
     price: 18,
     company: "Calicut Tile Company",
     info: "Dome (B)",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 13,
+    title: "Commonwealth Roofing Tile",
+    item: "Roofing Tile",
+    img: "img/product-13.png",
+    price: 35,
+    company: "Commonwealth",
+    info:
+      "Essentially meant for buildings requiring the highest quality of roofing, these double interlocking rooging tiles can withstand every test of strength, reliability and weather worthiness. The possibility of leakage has been completely eliminated and these have been acknowledge as the best tiles existing today. They have low water absorption - a mere 17%, a breaking strength of 128kg in a wet state and dimensions of417mm * 261mm.",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 14,
+    title: "Commonwealth Ridge Tiles",
+    item: "Ridge Tile",
+    img: "img/product-14.png",
+    price: 68,
+    company: "Commonwealth",
+    info:
+      "Measuring 16 long, each Ridge Tile covers 2 flat tiles on each side of the ridge. Weighing roughly 3.4kg. each, our Ridges Tiles, turned out by machinery, achive hihg levels of strength, finish, overlap and catch-groove. 280 tiles are required for 100 running meters. 1000 ridge tiles occupy a Bulk Volume of 4.5 cubic metres.",
+    inCart: false,
+    count: 0,
+    total: 0
+  },
+  {
+    id: 15,
+    title: "Commonwealth Ceiling Tiles",
+    item: "Ceiling Tile",
+    img: "img/product-15.png",
+    price: 42,
+    company: "Commonwealth",
+    info:
+      "Along with Mangalore tiles over them, Ceiling tiles from cheap, effective and simple double roofing system with air space between them. These tiles cover the same area as the roofing tiles and go a long way in creating a pleasant temperature in the room.",
     inCart: false,
     count: 0,
     total: 0

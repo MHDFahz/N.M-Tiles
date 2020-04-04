@@ -20,7 +20,13 @@ export default class Navbar extends Component {
 
         <ul className="navbar-nav align-item-center">
           <li className="nav-item ml-2">
-            <Link to="/Product" className="nav-link nav-center">
+            <Link
+              to={{
+                pathname: "/product",
+                state: { pass: "All" },
+              }}
+              className="nav-link nav-center"
+            >
               Products
             </Link>
           </li>
@@ -53,7 +59,7 @@ const NavWrapper = styled.nav`
   background: var(--mainWhite) !important;
   margin: 0;
   .nav-link {
-    color: #9c7cf8 !important;
+    color: #009ffd !important;
     font-size: 1.4rem;
     text-transform: capitalize;
   }

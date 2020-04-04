@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 import Tile from "./Tile";
 export default class Something extends Component {
   render() {
@@ -8,58 +9,86 @@ export default class Something extends Component {
         <Tile name="our" title="Company's"></Tile>
         <div className="lbody">
           <div className="containerzz">
-            <div className="boxzz">
-              <div className="imgBxzz">
-                <img src="img/img1.jpg" />
+            <Link
+              to={{
+                pathname: "/product",
+                state: { pass: "Lamit" },
+              }}
+            >
+              <div className="boxzz">
+                <div className="imgBxzz">
+                  <img src="img/img1.jpg" alt="Lamit" />
+                </div>
+                <div className="contentzz">
+                  <h2>LAMIT ROOFING TILES</h2>
+                  <p>
+                    Best quality roof tile at an affordable price from Lamit
+                    group.
+                  </p>
+                  <h5>View Product</h5>
+                </div>
               </div>
-              <div className="contentzz">
-                <h2>LAMIT ROOFING TILES</h2>
-                <p>
-                  Best quality roof tile at an affordable price from Lamit
-                  group.
-                </p>
-                <a href="#">Read More</a>
+            </Link>
+            <Link
+              to={{
+                pathname: "/product",
+                state: { pass: "Wienerberger" },
+              }}
+            >
+              <div className="boxzz">
+                <div className="imgBxzz">
+                  <img src="img/img2.jpg" alt="Wienerberger" />
+                </div>
+                <div className="contentzz">
+                  <h2>Wienerberger</h2>
+                  <p>
+                    200 years of improving quality of living Wall | Facade |
+                    Roof.
+                  </p>
+                  <h5>View Product</h5>
+                </div>
               </div>
-            </div>
-            <div className="boxzz">
-              <div className="imgBxzz">
-                <img src="img/img2.jpg" />
+            </Link>
+            <Link
+              to={{
+                pathname: "/product",
+                state: { pass: "Commonwealth" },
+              }}
+            >
+              <div className="boxzz">
+                <div className="imgBxzz">
+                  <img src="img/img3.jpg" alt="Commonwealth" />
+                </div>
+                <div className="contentzz">
+                  <h2>Commonwealth Trust</h2>
+                  <p>
+                    Commonwealth is one of the top Roofing Tile dealers in
+                    Kerala.With Over 175 year experience
+                  </p>
+                  <h5>View Product</h5>
+                </div>
               </div>
-              <div className="contentzz">
-                <h2>Wienerberger</h2>
-                <p>
-                  200 years of improving quality of living Wall | Facade | Roof.
-                </p>
-                <a href="#">Read More</a>
+            </Link>
+            <Link
+              to={{
+                pathname: "/product",
+                state: { pass: "Maxlite AAC Blocks" },
+              }}
+            >
+              <div className="boxzz">
+                <div className="imgBxzz">
+                  <img src="img/img4.jpg" alt="Maxlite AAC Blocks" />
+                </div>
+                <div className="contentzz">
+                  <h2>Maxlite AAC Blocks</h2>
+                  <p>
+                    Maxlite AAC Blocks is a industrial units involved in
+                    manufacturing wide range products.
+                  </p>
+                  <h5>View Product</h5>
+                </div>
               </div>
-            </div>
-
-            <div className="boxzz">
-              <div className="imgBxzz">
-                <img src="img/img3.jpg" />
-              </div>
-              <div className="contentzz">
-                <h2>Commonwealth Trust</h2>
-                <p>
-                  Commonwealth is one of the top Roofing Tile dealers in
-                  Kerala.With Over 175 year experience
-                </p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
-            <div className="boxzz">
-              <div className="imgBxzz">
-                <img src="img/img4.jpg" />
-              </div>
-              <div className="contentzz">
-                <h2>Maxlite AAC Blocks</h2>
-                <p>
-                  Maxlite AAC Blocks is a industrial units involved in
-                  manufacturing wide range products.
-                </p>
-                <a href="#">Read More</a>
-              </div>
-            </div>
+            </Link>
           </div>
         </div>
       </SomethingWrap>
@@ -128,7 +157,7 @@ const SomethingWrap = styled.div`
     margin: 0;
     padding: 0;
   }
-  .containerzz .boxzz .contentzz a {
+  .containerzz .boxzz .contentzz h5 {
     text-decoration: none;
     background: #000;
     color: #fff;
@@ -137,7 +166,7 @@ const SomethingWrap = styled.div`
   }
   .containerzz .boxzz .contentzz h2,
   .containerzz .boxzz .contentzz p,
-  .containerzz .boxzz .contentzz a {
+  .containerzz .boxzz .contentzz h5 {
     opacity: 0;
     transition: 0.5s;
     transform: translateY(20px);
@@ -152,7 +181,7 @@ const SomethingWrap = styled.div`
     transform: translateY(0);
     transition-delay: 0.7s;
   }
-  .containerzz .boxzz:hover .contentzz a {
+  .containerzz .boxzz:hover .contentzz h5 {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.9s;
