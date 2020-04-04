@@ -55,6 +55,10 @@ export default class ProductList extends Component {
                           <option value="Commonwealth">Commonwealth</option>
                           <option value="Wienerberger">Wienerberger</option>
                           <option value="Lamit">Lamit</option>
+
+                          <option value="Maxlite AAC Blocks">
+                            Maxlite AAC Blocks
+                          </option>
                         </select>
                       </div>
                     </label>
@@ -70,6 +74,9 @@ export default class ProductList extends Component {
                           id="Company"
                         >
                           <option value="All">All</option>
+                          <option value="Ceramic Roofing Tile">
+                            Ceramic Roofing Tile
+                          </option>
                           <option value="Roofing Tile">Roofing Tile</option>
                           <option value="Glass Tile">Glass Tile</option>
                           <option value="Ridge Tile">Ridge Tile</option>

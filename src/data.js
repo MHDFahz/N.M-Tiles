@@ -10,7 +10,7 @@ export const storeProducts = [
       "Roofing Tile (Single Groove) \n 420 x 250 (mm) \n 16.5 x 9.8 (Inch)\n 1313 (100 Sq. M)\n 122 (100 Sq.Ft)",
     inCart: false,
     count: 0,
-    total: 0
+    total: 0,
   },
   {
     id: 2,
@@ -23,7 +23,7 @@ export const storeProducts = [
       "Roofing Tile (Double Groove)\n420 x 250 (mm) \n 16.5 x 9.8 (Inch)\n1313 (100 Sq. M)\n122 (100 Sq.Ft)",
     inCart: false,
     count: 0,
-    total: 0
+    total: 0,
   },
   {
     id: 3,
@@ -36,7 +36,7 @@ export const storeProducts = [
       "Skylight (Glass Tile)\n420 x 250 (mm) \n16.5 x 9.8 (Inch)\n1313 (100 Sq. M)\n122 (100 Sq.Ft)",
     inCart: false,
     count: 0,
-    total: 0
+    total: 0,
   },
   {
     id: 4,
@@ -49,7 +49,7 @@ export const storeProducts = [
       "Ridge Tile\n430 x 270 (mm) \n19.6 x 10.6 (Inch)\n262 (100 Sq. M)\n80 (100 Sq.Ft)",
     inCart: false,
     count: 0,
-    total: 0
+    total: 0,
   },
   {
     id: 5,
@@ -62,7 +62,7 @@ export const storeProducts = [
       "Decorative Ridge\n430 x 270 (mm) \n19.6 x 10.6 (Inch)\n262 (100 Sq. M)\n80 (100 Sq.Ft)",
     inCart: false,
     count: 0,
-    total: 0
+    total: 0,
   },
   {
     id: 6,
@@ -75,7 +75,7 @@ export const storeProducts = [
       "Ceiling Tile\n320x210x15(mm) \n12.6x8.2x0.6 (Inch)\n1313 (100 Sq. M)\n122 (100 Sq.Ft)",
     inCart: false,
     count: 0,
-    total: 0
+    total: 0,
   },
   {
     id: 7,
@@ -88,7 +88,7 @@ export const storeProducts = [
       "Taylor Tile\n342x241(mm) \n13.4x9.5 (Inch)\n2324 (100 Sq. M)\n2324 (100 Sq.Ft)",
     inCart: false,
     count: 0,
-    total: 0
+    total: 0,
   },
   {
     id: 8,
@@ -100,7 +100,7 @@ export const storeProducts = [
     info: "Ventilator Tile (Single)\n420x250(mm) \n16.5x9.8 (Inch)",
     inCart: false,
     count: 0,
-    total: 0
+    total: 0,
   },
   {
     id: 9,
@@ -112,7 +112,7 @@ export const storeProducts = [
     info: "Ventilator Tile (Double)\n420x485(mm) \n16.5x19 (Inch)",
     inCart: false,
     count: 0,
-    total: 0
+    total: 0,
   },
   {
     id: 10,
@@ -124,7 +124,7 @@ export const storeProducts = [
     info: "Valley Tile\n533x343(mm) \n21x13.5 (Inch)",
     inCart: false,
     count: 0,
-    total: 0
+    total: 0,
   },
   {
     id: 11,
@@ -136,7 +136,7 @@ export const storeProducts = [
     info: "Dome (A)",
     inCart: false,
     count: 0,
-    total: 0
+    total: 0,
   },
   {
     id: 12,
@@ -148,7 +148,7 @@ export const storeProducts = [
     info: "Dome (B)",
     inCart: false,
     count: 0,
-    total: 0
+    total: 0,
   },
   {
     id: 13,
@@ -161,7 +161,7 @@ export const storeProducts = [
       "Essentially meant for buildings requiring the highest quality of roofing, these double interlocking rooging tiles can withstand every test of strength, reliability and weather worthiness. The possibility of leakage has been completely eliminated and these have been acknowledge as the best tiles existing today. They have low water absorption - a mere 17%, a breaking strength of 128kg in a wet state and dimensions of417mm * 261mm.",
     inCart: false,
     count: 0,
-    total: 0
+    total: 0,
   },
   {
     id: 14,
@@ -174,7 +174,7 @@ export const storeProducts = [
       "Measuring 16 long, each Ridge Tile covers 2 flat tiles on each side of the ridge. Weighing roughly 3.4kg. each, our Ridges Tiles, turned out by machinery, achive hihg levels of strength, finish, overlap and catch-groove. 280 tiles are required for 100 running meters. 1000 ridge tiles occupy a Bulk Volume of 4.5 cubic metres.",
     inCart: false,
     count: 0,
-    total: 0
+    total: 0,
   },
   {
     id: 15,
@@ -187,8 +187,51 @@ export const storeProducts = [
       "Along with Mangalore tiles over them, Ceiling tiles from cheap, effective and simple double roofing system with air space between them. These tiles cover the same area as the roofing tiles and go a long way in creating a pleasant temperature in the room.",
     inCart: false,
     count: 0,
-    total: 0
-  }
+    total: 0,
+  },
+  {
+    id: 16,
+    title: "NATURA PLANUM [GERMAN SERIES]",
+    item: "Ceramic Roofing Tile",
+    img: "img/natura-planum-1.jpg",
+    price: 42,
+    company: "Lamit",
+    info:
+      "Size: 305mm x 480mm\nWeight: 4.6kg/piece\nPieces for every square: 9.8 pieces",
+    inCart: false,
+    color:
+      "Color: Dark Grey\nCoffee Brown\nTeracotta\nAntique Schatten\nAntique Schatten Brown",
+    count: 0,
+    total: 0,
+  },
+  {
+    id: 17,
+    title: "PIANO EDGE [GERMAN SERIES]",
+    item: "Ceramic Roofing Tile",
+    img: "img/natura-planum-3.jpg",
+    price: 42,
+    company: "Lamit",
+    info:
+      "Size: 280mm x 400mm\nWeight: 2.7kg/piece\nThickness: 11mm\nPieces for every square: 11 pieces",
+    inCart: false,
+    color: "Color: Coffee Brown\nSaffron Red\nMatte Black",
+    count: 0,
+    total: 0,
+  },
+  {
+    id: 18,
+    title: "PIANO CURVE [GERMAN SERIES]",
+    item: "Ceramic Roofing Tile",
+    img: "img/natura-planum-2.png",
+    price: 42,
+    company: "Lamit",
+    info:
+      "Size: 280mm x 400mm\nWeight: 2.7kg/piece\nThickness: 11mm\nPieces for every square: 11 pieces",
+    inCart: false,
+    color: "Color: Coffee Brown\nSaffron Red\nSemi Grey",
+    count: 0,
+    total: 0,
+  },
 ];
 
 export const detailProduct = {
@@ -201,5 +244,5 @@ export const detailProduct = {
     "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
   inCart: false,
   count: 0,
-  total: 0
+  total: 0,
 };

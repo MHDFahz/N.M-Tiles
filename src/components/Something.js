@@ -9,86 +9,89 @@ export default class Something extends Component {
         <Tile name="our" title="Company's"></Tile>
         <div className="lbody">
           <div className="containerzz">
-            <Link
-              to={{
-                pathname: "/product",
-                state: { pass: "Lamit" },
-              }}
-            >
-              <div className="boxzz">
-                <div className="imgBxzz">
-                  <img src="img/img1.jpg" alt="Lamit" />
-                </div>
-                <div className="contentzz">
+            <div className="boxzz">
+              <div className="imgBxzz">
+                <img src="img/img1.jpg" alt="Lamit" />
+              </div>
+              <div className="contentzz">
+                <Link
+                  to={{
+                    pathname: "/product",
+                    state: { pass: "Lamit" },
+                  }}
+                >
                   <h2>LAMIT ROOFING TILES</h2>
                   <p>
                     Best quality roof tile at an affordable price from Lamit
                     group.
                   </p>
                   <h5>View Product</h5>
-                </div>
+                </Link>
               </div>
-            </Link>
-            <Link
-              to={{
-                pathname: "/product",
-                state: { pass: "Wienerberger" },
-              }}
-            >
-              <div className="boxzz">
-                <div className="imgBxzz">
-                  <img src="img/img2.jpg" alt="Wienerberger" />
-                </div>
-                <div className="contentzz">
+            </div>
+
+            <div className="boxzz">
+              <div className="imgBxzz">
+                <img src="img/img2.jpg" alt="Wienerberger" />
+              </div>
+              <div className="contentzz">
+                <Link
+                  to={{
+                    pathname: "/product",
+                    state: { pass: "Wienerberger" },
+                  }}
+                >
                   <h2>Wienerberger</h2>
                   <p>
                     200 years of improving quality of living Wall | Facade |
                     Roof.
                   </p>
-                  <h5>View Product</h5>
-                </div>
+                </Link>
+                <h5>View Product</h5>
               </div>
-            </Link>
-            <Link
-              to={{
-                pathname: "/product",
-                state: { pass: "Commonwealth" },
-              }}
-            >
-              <div className="boxzz">
-                <div className="imgBxzz">
-                  <img src="img/img3.jpg" alt="Commonwealth" />
-                </div>
-                <div className="contentzz">
+            </div>
+
+            <div className="boxzz">
+              <div className="imgBxzz">
+                <img src="img/img3.jpg" alt="Commonwealth" />
+              </div>
+              <div className="contentzz">
+                <Link
+                  to={{
+                    pathname: "/product",
+                    state: { pass: "Commonwealth" },
+                  }}
+                >
                   <h2>Commonwealth Trust</h2>
                   <p>
                     Commonwealth is one of the top Roofing Tile dealers in
                     Kerala.With Over 175 year experience
                   </p>
-                  <h5>View Product</h5>
-                </div>
+                  <h5>View Product</h5>{" "}
+                </Link>
               </div>
-            </Link>
-            <Link
-              to={{
-                pathname: "/product",
-                state: { pass: "Maxlite AAC Blocks" },
-              }}
-            >
-              <div className="boxzz">
-                <div className="imgBxzz">
-                  <img src="img/img4.jpg" alt="Maxlite AAC Blocks" />
-                </div>
-                <div className="contentzz">
+            </div>
+
+            <div className="boxzz">
+              <div className="imgBxzz">
+                <img src="img/img4.jpg" alt="Maxlite AAC Blocks" />
+              </div>
+              <div className="contentzz">
+                <Link
+                  to={{
+                    pathname: "/product",
+                    state: { pass: "Maxlite AAC Blocks" },
+                  }}
+                >
                   <h2>Maxlite AAC Blocks</h2>
                   <p>
                     Maxlite AAC Blocks is a industrial units involved in
                     manufacturing wide range products.
                   </p>
                   <h5>View Product</h5>
-                </div>
+                </Link>
               </div>
-            </Link>
+            </div>
           </div>
         </div>
       </SomethingWrap>
@@ -175,15 +178,18 @@ const SomethingWrap = styled.div`
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.5s;
+    text-decoration: none;
   }
   .containerzz .boxzz:hover .contentzz p {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.7s;
+    text-decoration: none;
   }
   .containerzz .boxzz:hover .contentzz h5 {
     opacity: 1;
     transform: translateY(0);
     transition-delay: 0.9s;
+    text-decoration: none;
   }
 `;

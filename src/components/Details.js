@@ -8,7 +8,7 @@ export default class Details extends Component {
   render() {
     return (
       <ProductConsumer>
-        {value => {
+        {(value) => {
           const {
             id,
             company,
@@ -16,11 +16,12 @@ export default class Details extends Component {
             info,
             price,
             title,
-            inCart
+            inCart,
+            color,
           } = value.detailProduct;
+          console.log(color);
           return (
             <div className="container py-5">
-              {/* title */}
               <div className="row">
                 <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
                   <h1>{title}</h1>
@@ -47,6 +48,8 @@ export default class Details extends Component {
                     some info product:
                   </p>
                   <p className="text-muted lead">{nl2br(info)}</p>
+
+                  <p className="text-muted lead">{nl2br(color)}</p>
                   {/* button */}
                   <div>
                     <Link to="/product">
