@@ -11,7 +11,11 @@ export default class About extends Component {
                 <img src="img/img-01.png" alt="IMG" />
               </div>
 
-              <form class="contact1-form validate-form">
+              <form
+                class="contact1-form validate-form"
+                method="POST"
+                data-netlify="true"
+              >
                 <span class="contact1-form-title">Get in touch</span>
 
                 <div
