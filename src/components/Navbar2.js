@@ -1,26 +1,32 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import logo from "../logo1.svg";
+
 import styled from "styled-components";
 import { ButtonContainer } from "./Button1";
 
 export default class Navbar extends Component {
   render() {
     return (
-      <NavWrapper className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-5">
+      <NavWrapper className="navbar navbar-expand-sm bg-primary navbar-dark px-sm-1">
         <Link to="/">
-          <img src={logo} alt="N.M Tiles" className="ass"></img>
+          <img
+            src="img/logo.png"
+            width="70px"
+            height="70px"
+            alt="N.M Tiles"
+            className="ass"
+          ></img>
         </Link>
 
         <ul className="navbar-nav align-item-center">
-          <li className="nav-item ml-5">
-            <Link to="/" className="nav-link nav-center">
+          <li className="nav-item ml-2">
+            <Link to="/Product" className="nav-link nav-center">
               Products
             </Link>
           </li>
         </ul>
         <ul className="navbar-nav  align-item-center">
-          <li className="nav-item ml-5">
+          <li className="nav-item ml-1">
             <Link to="/about" className="nav-link nav-center">
               Contact
             </Link>
@@ -41,7 +47,10 @@ export default class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav`
-  background: #fff !important;
+  border-bottom: 0.1px solid white;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  background: var(--mainWhite) !important;
   margin: 0;
   .nav-link {
     color: #9c7cf8 !important;

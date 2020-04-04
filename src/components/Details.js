@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import { ProductConsumer } from "./context";
 import { Link } from "react-router-dom";
 import { ButtonContainer } from "./Button2";
+import nl2br from "react-newline-to-break";
 
 export default class Details extends Component {
   render() {
@@ -45,10 +46,10 @@ export default class Details extends Component {
                   <p className="text-capitalize font-weight-bold mt-3 mb-0">
                     some info product:
                   </p>
-                  <p className="text-muted lead">{info}</p>
+                  <p className="text-muted lead">{nl2br(info)}</p>
                   {/* button */}
                   <div>
-                    <Link to="/">
+                    <Link to="/product">
                       <ButtonContainer>Back to Products</ButtonContainer>
                     </Link>
                     <ButtonContainer

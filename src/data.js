@@ -1,144 +1,139 @@
 export const storeProducts = [
   {
     id: 1,
-    title: "Google Pixel - Black",
+    title: "Calicut Roofing Tile\n(Single Groove)",
     img: "img/product-1.png",
     price: 10,
-    company: "GOOGLE",
+    company: "Calicut Tile Company",
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      "Roofing Tile (Single Groove) \n 420 x 250 (mm) \n 16.5 x 9.8 (Inch)\n 1313 (100 Sq. M)\n 122 (100 Sq.Ft)",
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 2,
-    title: "Samsung S7",
+    title: "Calicut Roofing Tile\n (Double Groove)",
     img: "img/product-2.png",
     price: 16,
-    company: "SAMSUNG",
+    company: "Calicut Tile Company",
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      "Roofing Tile (Double Groove)\n420 x 250 (mm) \n 16.5 x 9.8 (Inch)\n1313 (100 Sq. M)\n122 (100 Sq.Ft)",
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 3,
-    title: "HTC 10 - Black",
+    title: "Calicut Roofing Tile\n (Glass Tile)",
     img: "img/product-3.png",
     price: 8,
-    company: "htc",
+    company: "Calicut Tile Company",
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      "Skylight (Glass Tile)\n420 x 250 (mm) \n16.5 x 9.8 (Inch)\n1313 (100 Sq. M)\n122 (100 Sq.Ft)",
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 4,
-    title: "HTC 10 - White",
+    title: "Calicut Roofing Tile\n (Ridge Tile)",
     img: "img/product-4.png",
     price: 18,
-    company: "htc",
+    company: "Calicut Tile Company",
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      "Ridge Tile\n430 x 270 (mm) \n19.6 x 10.6 (Inch)\n262 (100 Sq. M)\n80 (100 Sq.Ft)",
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 5,
-    title: "HTC Desire 626s",
+    title: "Calicut Roofing Tile\n (Decorative Ridge)",
     img: "img/product-5.png",
     price: 24,
-    company: "htc",
+    company: "Calicut Tile Company",
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      "Decorative Ridge\n430 x 270 (mm) \n19.6 x 10.6 (Inch)\n262 (100 Sq. M)\n80 (100 Sq.Ft)",
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 6,
-    title: "Vintage Iphone",
+    title: "Calicut Roofing Tile\n (Taylor Tile)",
     img: "img/product-6.png",
     price: 17,
-    company: "apple",
+    company: "Calicut Tile Company",
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      "Ceiling Tile\n320x210x15(mm) \n12.6x8.2x0.6 (Inch)\n1313 (100 Sq. M)\n122 (100 Sq.Ft)",
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 7,
-    title: "Iphone 7",
+    title: "Calicut Roofing Tile\n (Ceiling Tile)",
     img: "img/product-7.png",
     price: 30,
-    company: "apple",
+    company: "Calicut Tile Company",
     info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+      "Taylor Tile\n342x241(mm) \n13.4x9.5 (Inch)\n2324 (100 Sq. M)\n2324 (100 Sq.Ft)",
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 8,
-    title: "Smashed Iphone",
+    title: "Calicut Ventilator Tile\n (Single)",
     img: "img/product-8.png",
     price: 2,
-    company: "apple",
-    info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    company: "Calicut Tile Company",
+    info: "Ventilator Tile (Single)\n420x250(mm) \n16.5x9.8 (Inch)",
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 9,
-    title: "Google Pixel - Black",
-    img: "img/product-1.png",
+    title: "Calicut Roofing Tile\n (Ceiling Tile)",
+    img: "img/product-9.png",
     price: 10,
-    company: "GOOGLE",
-    info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    company: "Calicut Tile Company",
+    info: "Ventilator Tile (Double)\n420x485(mm) \n16.5x19 (Inch)",
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 10,
-    title: "Samsung S7",
-    img: "img/product-2.png",
+    title: "Calicut Roofing Tile\n (Ceiling Tile)",
+    img: "img/product-10.png",
     price: 16,
-    company: "SAMSUNG",
-    info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    company: "Calicut Tile Company",
+    info: "Valley Tile\n533x343(mm) \n21x13.5 (Inch)",
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 11,
-    title: "HTC 10 - Black",
-    img: "img/product-3.png",
+    title: "Calicut Roofing Tile\n (Dome - A",
+    img: "img/product-11.png",
     price: 8,
-    company: "htc",
-    info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    company: "Calicut Tile Company",
+    info: "Dome (A)",
     inCart: false,
     count: 0,
     total: 0
   },
   {
     id: 12,
-    title: "HTC 10 - White",
-    img: "img/product-4.png",
+    title: "Calicut Roofing Tile\n (Dome - B)",
+    img: "img/product-12.png",
     price: 18,
-    company: "htc",
-    info:
-      "Lorem ipsum dolor amet offal butcher quinoa sustainable gastropub, echo park actually green juice sriracha paleo. Brooklyn sriracha semiotics, DIY coloring book mixtape craft beer sartorial hella blue bottle. Tote bag wolf authentic try-hard put a bird on it mumblecore. Unicorn lumbersexual master cleanse blog hella VHS, vaporware sartorial church-key cardigan single-origin coffee lo-fi organic asymmetrical. Taxidermy semiotics celiac stumptown scenester normcore, ethical helvetica photo booth gentrify.",
+    company: "Calicut Tile Company",
+    info: "Dome (B)",
     inCart: false,
     count: 0,
     total: 0

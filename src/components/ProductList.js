@@ -12,6 +12,30 @@ export default class ProductList extends Component {
             <div className="py-5">
               <div className="container">
                 <Title name="our" title="product" />
+                <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
+                  <br />
+                  <label for="Item">Items : -</label>
+                  <select id="Item" name="Item">
+                    <option value="Single Grove">Single Grove</option>
+                    <option value="Double Groove">Double Groove</option>
+                    <option value="Glass Tile">Glass Tile</option>
+                    <option value="Ridge Tile">Ridge Tile</option>
+                    <option value="Decorative Ridge">Decorative Ridge</option>
+                    <option value="Taylor Tile">Taylor Tile</option>
+                    <option value="Ceiling Tile">Ceiling Tile</option>
+                    <option value="Dome">Dome</option>
+                  </select>
+
+                  <label for="Company"> Company : -</label>
+                  <select id="Company">
+                    <option value="Calicut Tile Company">
+                      Calicut Tile Company
+                    </option>
+                    <option value="saab">Saab</option>
+                    <option value="mercedes">Mercedes</option>
+                    <option value="audi">Audi</option>
+                  </select>
+                </div>
                 <div className="row">
                   <ProductConsumer>
                     {hello => {
@@ -30,12 +54,6 @@ export default class ProductList extends Component {
   }
 }
 const Main = styled.div`
-.headr{
-  background: linear-gradient(90deg, #9C7CF8, #7548F6) 100% 30%/70px 60px no-repeat,linear-gradient(90deg, rgba(156,124,248,0.1), rgba(117,72,246,0.1)) 100% 28%/90px 60px no-repeat,linear-gradient(80deg, #1F1737, #1C0D43) 0 0/100% calc(100% - 20px) no-repeat,linear-gradient(90deg, #9C7CF8, #7548F6) 0 100%/35vw 20px no-repeat,linear-gradient(90deg, rgba(156,124,248,0.12), rgba(117,72,246,0.12)) 0 calc(100% - 5px)/39vw 20px no-repeat;  height:100%;
-    margin:2rem 4rem;
-    background-position:center;
-
-    background-size:cover;
-    border-radius:2rem;
-    
+  .headr {
+  }
 `;
