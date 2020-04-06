@@ -41,3 +41,11 @@ body {
   font-size: 1.2rem;
   color: var(--mainYellow);
 }
+.cart-color {
+  padding: 0.2rem 0.4rem;
+  background: var(--lightBlue);
+  border: none;
+  color: var(--mainWhite);
+  font-size: 1.4rem;
+  border-radius: 0 0.5rem 0 0;
+}

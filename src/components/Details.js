@@ -17,9 +17,10 @@ export default class Details extends Component {
             price,
             title,
             inCart,
-            color,
+            color1,
           } = value.detailProduct;
-          console.log(color);
+
+          console.log(this.props);
           return (
             <div className="container py-5">
               <div className="row">
@@ -45,16 +46,47 @@ export default class Details extends Component {
                     </strong>
                   </h4>
                   <p className="text-capitalize font-weight-bold mt-3 mb-0">
-                    some info product:
+                    Product Info:
                   </p>
                   <p className="text-muted lead">{nl2br(info)}</p>
 
-                  <p className="text-muted lead">{nl2br(color)}</p>
                   {/* button */}
+                  <button
+                    className="cart-color"
+                    onClick={() => {
+                      value.changeImg(id);
+                    }}
+                    style={{
+                      display: company === "Lamit" ? "bolck" : "none",
+                    }}
+                  >
+                    {color1}
+                  </button>
+                  <br />
+                  <div className="py-1">
+                    <Link to="/CompanyProduct">
+                      <button
+                        className=" btn-danger"
+                        style={{
+                          display: company === "Lamit" ? "bolck" : "none",
+                        }}
+                      >
+                        BACK TO LAMIT
+                      </button>
+                    </Link>
+                  </div>
                   <div>
-                    <Link to="/product">
+                    <Link
+                      to={{
+                        pathname: "/product",
+                        state: {
+                          pass: this.props.location.state.pass,
+                        },
+                      }}
+                    >
                       <ButtonContainer>Back to Products</ButtonContainer>
                     </Link>
+
                     <ButtonContainer
                       cart
                       disabled={inCart ? true : false}

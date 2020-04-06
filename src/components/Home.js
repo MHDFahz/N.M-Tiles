@@ -13,7 +13,12 @@ export default class Home extends Component {
           <div className="Overlays" />
           <div className="Headdings">
             <h1 className="Titles">Thoughtful standards for modern House</h1>
-            <NavLink to="/product">
+            <NavLink
+              to={{
+                pathname: "/product",
+                state: { pass: "All", pass1: "All" },
+              }}
+            >
               <button className="Btns">shop now</button>
             </NavLink>
           </div>

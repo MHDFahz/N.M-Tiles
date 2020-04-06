@@ -6,17 +6,31 @@ import PropTypes from "prop-types";
 
 export default class Product extends Component {
   render() {
-    const { id, title, img, price, inCart } = this.props.product;
+    const {
+      id,
+      title,
+      img,
+      price,
+      inCart,
+      company,
+      color1,
+    } = this.props.product;
+
     return (
       <ProductWrapper className="col-9 mx-auto col-md-6 col-lg-3 my-3">
         <div className="card">
           <ProductConsumer>
-            {value => (
+            {(value) => (
               <div
                 className="img-container p-5"
                 onClick={() => value.handleDetail(id)}
               >
-                <Link to="/details">
+                <Link
+                  to={{
+                    pathname: "/details",
+                    state: { pass: this.props.loc },
+                  }}
+                >
                   <img src={img} alt="product" className="card-img-top" />
                 </Link>
                 <button
@@ -35,12 +49,35 @@ export default class Product extends Component {
                     <i className="fas fa-cart-plus" />
                   )}
                 </button>
+
+                <button
+                  className="cart-color"
+                  onClick={() => {
+                    value.changeImg(id);
+                  }}
+                  style={{
+                    display: company === "Lamit" ? "bolck" : "none",
+                  }}
+                >
+                  {color1}
+                </button>
               </div>
             )}
           </ProductConsumer>
           {/* CARD FOOTER */}
           <div className="card-footer d-flex justify-content-between">
-            <p className="align-self-center mb-0">{title}</p>
+            <p className="align-self-center mb-0">
+              {title}
+              <h5
+                className="align-self-center mb-0"
+                style={{
+                  display: company === "Lamit" ? "bolck" : "none",
+                }}
+              >
+                {company}
+              </h5>
+            </p>
+
             <h5 className="text-blue font-italic mb-0">
               <span className="mr-1">&#8377;</span>
               {price}
@@ -58,8 +95,8 @@ Product.propTypes = {
     img: PropTypes.string,
     title: PropTypes.string,
     price: PropTypes.number,
-    inCart: PropTypes.bool
-  }).isRequired
+    inCart: PropTypes.bool,
+  }).isRequired,
 };
 
 const ProductWrapper = styled.div`
@@ -103,6 +140,17 @@ const ProductWrapper = styled.div`
     border-radius: 0.5rem 0 0 0;
     transform: translate(100%, 100%);
     transition: all 0.3s linear;
+  }
+  .cart-color {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 0.2rem 0.4rem;
+    background: var(--lightBlue);
+    border: none;
+    color: var(--mainWhite);
+    font-size: 0.9rem;
+    border-radius: 0 0.5rem 0 0;
   }
   .img-container:hover .cart-btn {
     transform: translate(0, 0);

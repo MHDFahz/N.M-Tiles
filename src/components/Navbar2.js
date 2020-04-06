@@ -23,7 +23,7 @@ export default class Navbar extends Component {
             <Link
               to={{
                 pathname: "/product",
-                state: { pass: "All" },
+                state: { pass: "All", pass1: "All" },
               }}
               className="nav-link nav-center"
             >

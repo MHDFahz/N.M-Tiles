@@ -3,11 +3,15 @@ import Product from "./Product";
 import Title from "./Tile";
 import { ProductConsumer } from "../components/context";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 export default class ProductList extends Component {
   constructor(props) {
     super(props);
-    console.log(props.location.state.pass);
-    this.state = { value: props.location.state.pass, values: "All" };
+
+    this.state = {
+      value: props.location.state.pass,
+      values: "All",
+    };
 
     this.handleChange = this.handleChange.bind(this);
     this.handleChang = this.handleChang.bind(this);
@@ -34,6 +38,11 @@ export default class ProductList extends Component {
             <div className="py-5">
               <div className="container">
                 <Title name="our" title="product" />
+                <div className="py-1">
+                  <Link to="/CompanyProduct">
+                    <img src="img/lamit.png" alt="Lamit" />
+                  </Link>
+                </div>
                 <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
                   <br />
 
@@ -62,7 +71,7 @@ export default class ProductList extends Component {
                         </select>
                       </div>
                     </label>
-                    <br></br>
+                    &nbsp;&nbsp;
                     <label for="Company">
                       <h3>
                         Items : -<br></br>
@@ -96,21 +105,37 @@ export default class ProductList extends Component {
                         if (products.company === this.state.value) {
                           if (products.item === this.state.values) {
                             return (
-                              <Product key={products.id} product={products} />
+                              <Product
+                                key={products.id}
+                                product={products}
+                                loc={this.state.value}
+                              />
                             );
                           } else if (this.state.values === "All") {
                             return (
-                              <Product key={products.id} product={products} />
+                              <Product
+                                key={products.id}
+                                product={products}
+                                loc={this.state.value}
+                              />
                             );
                           }
                         } else if (this.state.value === "All") {
                           if (products.item === this.state.values) {
                             return (
-                              <Product key={products.id} product={products} />
+                              <Product
+                                key={products.id}
+                                product={products}
+                                loc={this.state.value}
+                              />
                             );
                           } else if (this.state.values === "All") {
                             return (
-                              <Product key={products.id} product={products} />
+                              <Product
+                                key={products.id}
+                                product={products}
+                                loc={this.state.value}
+                              />
                             );
                           }
                         }

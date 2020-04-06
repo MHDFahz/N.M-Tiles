@@ -16,8 +16,8 @@ export default class Something extends Component {
               <div className="contentzz">
                 <Link
                   to={{
-                    pathname: "/product",
-                    state: { pass: "Lamit" },
+                    pathname: "/CompanyProduct",
+                    state: { pass: "Lamit", pass1: "All" },
                   }}
                 >
                   <h2>LAMIT ROOFING TILES</h2>
@@ -38,7 +38,7 @@ export default class Something extends Component {
                 <Link
                   to={{
                     pathname: "/product",
-                    state: { pass: "Wienerberger" },
+                    state: { pass: "Wienerberger", pass1: "All" },
                   }}
                 >
                   <h2>Wienerberger</h2>
@@ -59,7 +59,7 @@ export default class Something extends Component {
                 <Link
                   to={{
                     pathname: "/product",
-                    state: { pass: "Commonwealth" },
+                    state: { pass: "Commonwealth", pass1: "All" },
                   }}
                 >
                   <h2>Commonwealth Trust</h2>
@@ -80,7 +80,7 @@ export default class Something extends Component {
                 <Link
                   to={{
                     pathname: "/product",
-                    state: { pass: "Maxlite AAC Blocks" },
+                    state: { pass: "Maxlite AAC Blocks", pass1: "All" },
                   }}
                 >
                   <h2>Maxlite AAC Blocks</h2>
