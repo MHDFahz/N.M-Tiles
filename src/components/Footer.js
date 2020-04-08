@@ -60,6 +60,9 @@ export default class Footer extends Component {
 }
 const FooterWrapper = styled.footer`
   .footers {
+    flex-shrink: 0;
+  }
+  .footers {
     height: auto;
     text-align: center;
     position: relative;

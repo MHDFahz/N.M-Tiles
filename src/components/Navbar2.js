@@ -53,10 +53,12 @@ export default class Navbar extends Component {
 }
 
 const NavWrapper = styled.nav`
-  border-bottom: 0.1px solid white;
-  border-bottom-left-radius: 20px;
-  border-bottom-right-radius: 20px;
-  background: var(--mainWhite) !important;
+  top: 0px;
+  z-index: 400;
+  width: 100%;
+  position: sticky;
+
+  background: rgba(0, 25, 31, 0.73) !important;
   margin: 0;
   .nav-link {
     color: #009ffd !important;

@@ -4,6 +4,7 @@ import Title from "./Tile";
 import { ProductConsumer } from "../components/context";
 import styled from "styled-components";
 import { Link } from "react-router-dom";
+import BrandList from "./BrandList";
 export default class ProductList extends Component {
   constructor(props) {
     super(props);
@@ -38,14 +39,10 @@ export default class ProductList extends Component {
             <div className="py-5">
               <div className="container">
                 <Title name="our" title="product" />
-                <div className="py-1">
-                  <Link to="/CompanyProduct">
-                    <img src="img/lamit.png" alt="Lamit" />
-                  </Link>
-                </div>
-                <div className="col-10 mx-auto text-center text-slanted text-blue my-5">
-                  <br />
 
+                <div className="col-10 mx-auto text-center text-slanted text-blue">
+                  <br />
+                  <BrandList></BrandList>
                   <form onSubmit={this.handleSubmit}>
                     <label for="Company">
                       <h3>
@@ -92,6 +89,9 @@ export default class ProductList extends Component {
                           <option value="Ceiling Tile">Ceiling Tile</option>
                           <option value="Ventilator Tile">
                             Ventilator Tile
+                          </option>
+                          <option value="Hollow Clay Block">
+                            Hollow Clay Block
                           </option>
                         </select>
                       </div>
@@ -153,25 +153,25 @@ export default class ProductList extends Component {
 }
 const Main = styled.div`
   #mainselection select {
-    border: 0;
-    color: #eee;
-    background: transparent;
-    font-size: 20px;
-    font-weight: bold;
-    padding: 2px 10px;
-    width: 300px;
-    *width: 300px;
-    *background: #009ffd;
-    -webkit-appearance: none;
+    border: 0 !important;
+    color: #eee !important;
+    background: transparent !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    padding: 2px 10px !important;
+    width: 300px !important;
+    *width: 300px !important;
+    *background: #009ffd !important;
+    -webkit-appearance: none !important;
   }
 
   #mainselection {
-    overflow: hidden;
-    width: 300px;
-    -moz-border-radius: 9px 9px 9px 9px;
-    -webkit-border-radius: 9px 9px 9px 9px;
-    border-radius: 9px 9px 9px 9px;
-    box-shadow: 1px 1px 11px #330033;
-    background: #009ffd no-repeat scroll 319px center;
+    overflow: hidden !important;
+    width: 300px !important;
+    -moz-border-radius: 9px 9px 9px 9px !important;
+    -webkit-border-radius: 9px 9px 9px 9px !important;
+    border-radius: 9px 9px 9px 9px !important;
+    box-shadow: 1px 1px 11px #330033 !important;
+    background: #009ffd no-repeat scroll 319px center !important;
   }
 `;

@@ -21,6 +21,12 @@ export default class Home extends Component {
             >
               <button className="Btns">shop now</button>
             </NavLink>
+            <img
+              src="img/since.png"
+              width="100px"
+              heigth="100px"
+              alt="since 1970"
+            />
           </div>
         </div>
 
@@ -30,7 +36,9 @@ export default class Home extends Component {
   }
 }
 
-const HomeStyle = styled.nav`
+const HomeStyle = styled.div`
+  position: relative;
+  top: 5px;
   .Containers {
     margin: 1rem 2rem 2rem 2rem;
     background: #ffffff;

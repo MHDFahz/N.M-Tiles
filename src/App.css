@@ -8,9 +8,11 @@
 }
 body {
   font-family: "Oswald", sans-serif !important;
-  background-color: #fff !important;
+  background-color: white;
+
   color: var(--mainDark) !important;
 }
+
 .text-title {
   font-family: "Permanent Marker", cursive !important;
   letter-spacing: 0.3em !important;
@@ -41,11 +43,41 @@ body {
   font-size: 1.2rem;
   color: var(--mainYellow);
 }
-.cart-color {
-  padding: 0.2rem 0.4rem;
-  background: var(--lightBlue);
+.button {
+  border-radius: 4px;
+  background-color: #009ffd;
   border: none;
-  color: var(--mainWhite);
-  font-size: 1.4rem;
-  border-radius: 0 0.5rem 0 0;
+  color: #ffffff;
+  text-align: center;
+  font-size: 15px;
+  padding: 10px;
+  width: 167px;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 5px;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: "\00bb";
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }

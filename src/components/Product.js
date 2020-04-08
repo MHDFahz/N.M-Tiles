@@ -56,7 +56,7 @@ export default class Product extends Component {
                     value.changeImg(id);
                   }}
                   style={{
-                    display: company === "Lamit" ? "bolck" : "none",
+                    display: color1 ? "bolck" : "none",
                   }}
                 >
                   {color1}
@@ -68,14 +68,14 @@ export default class Product extends Component {
           <div className="card-footer d-flex justify-content-between">
             <p className="align-self-center mb-0">
               {title}
-              <h5
+              <h6
                 className="align-self-center mb-0"
                 style={{
                   display: company === "Lamit" ? "bolck" : "none",
                 }}
               >
                 {company}
-              </h5>
+              </h6>
             </p>
 
             <h5 className="text-blue font-italic mb-0">
@@ -149,8 +149,7 @@ const ProductWrapper = styled.div`
     background: var(--lightBlue);
     border: none;
     color: var(--mainWhite);
-    font-size: 0.9rem;
-    border-radius: 0 0.5rem 0 0;
+    font-size: 1.2rem;
   }
   .img-container:hover .cart-btn {
     transform: translate(0, 0);

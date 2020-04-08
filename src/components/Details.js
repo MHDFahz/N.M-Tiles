@@ -18,6 +18,7 @@ export default class Details extends Component {
             title,
             inCart,
             color1,
+            color,
           } = value.detailProduct;
 
           console.log(this.props);
@@ -49,32 +50,38 @@ export default class Details extends Component {
                     Product Info:
                   </p>
                   <p className="text-muted lead">{nl2br(info)}</p>
-
                   {/* button */}
-                  <button
-                    className="cart-color"
-                    onClick={() => {
-                      value.changeImg(id);
-                    }}
+
+                  <div
                     style={{
-                      display: company === "Lamit" ? "bolck" : "none",
+                      display: color1 ? "bolck" : "none",
                     }}
                   >
-                    {color1}
-                  </button>
-                  <br />
+                    Color : {color}
+                    <br></br>
+                    <button
+                      className="button"
+                      onClick={() => {
+                        value.changeImg(id);
+                      }}
+                    >
+                      <span>{color1}</span>
+                    </button>
+                    &nbsp;&nbsp;&nbsp;&lt;-- Color Change
+                  </div>
                   <div className="py-1">
                     <Link to="/CompanyProduct">
                       <button
-                        className=" btn-danger"
+                        className="button"
                         style={{
                           display: company === "Lamit" ? "bolck" : "none",
                         }}
                       >
-                        BACK TO LAMIT
+                        <span> BACK TO LAMIT</span>
                       </button>
                     </Link>
                   </div>
+
                   <div>
                     <Link
                       to={{

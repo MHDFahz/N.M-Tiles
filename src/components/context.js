@@ -53,6 +53,15 @@ class ProductProvider extends Component {
       return { products: tempProducts, cart: [...this.state.cart, product] };
     });
   };
+  color = (id) => {
+    let tempProducts = [...this.state.products];
+    const index = tempProducts.indexOf(this.getItem(id));
+    const product = tempProducts[index];
+    let tempColor = "";
+    for (let i = 0; i < product.colorcount; i++) {
+      tempColor = tempColor + product.color[i];
+    }
+  };
   changeImg = (id) => {
     let tempProducts = [...this.state.products];
     const index = tempProducts.indexOf(this.getItem(id));
