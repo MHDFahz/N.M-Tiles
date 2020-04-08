@@ -3,8 +3,8 @@ import Product from "./Product";
 import Title from "./Tile";
 import { ProductConsumer } from "../components/context";
 import styled from "styled-components";
-import { Link } from "react-router-dom";
 import BrandList from "./BrandList";
+
 export default class ProductList extends Component {
   constructor(props) {
     super(props);
@@ -61,7 +61,7 @@ export default class ProductList extends Component {
                           <option value="Commonwealth">Commonwealth</option>
                           <option value="Wienerberger">Wienerberger</option>
                           <option value="Lamit">Lamit</option>
-
+                          <option value="Piccado">Piccado</option>
                           <option value="Maxlite AAC Blocks">
                             Maxlite AAC Blocks
                           </option>

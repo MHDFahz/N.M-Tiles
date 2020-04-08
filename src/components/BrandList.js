@@ -13,9 +13,14 @@ export default class BrandList extends Component {
             to={{
               pathname: "/product",
               state: { pass: "Commonwealth", pass1: "All" },
+              refresh: "true",
             }}
           >
-            <img src="img/comtrust.png" alt="comtrust" />
+            <img
+              src="img/comtrust.png"
+              alt="comtrust"
+              onClick={() => window.location.reload(false)}
+            />
           </Link>
           &nbsp; &nbsp;
           <Link
@@ -33,16 +38,24 @@ export default class BrandList extends Component {
               state: { pass: "Wienerberger", pass1: "All" },
             }}
           >
-            <img src="img/weinerberger.png" alt="weinerberger" />
+            <img
+              src="img/weinerberger.png"
+              alt="weinerberger"
+              onClick={() => window.location.reload(false)}
+            />
           </Link>
           &nbsp; &nbsp;
           <Link
             to={{
               pathname: "/product",
-              state: { pass: "Maxlite", pass1: "All" },
+              state: { pass: "Maxlite AAC Blocks", pass1: "All" },
             }}
           >
-            <img src="img/maxlite.png" alt="piccado" />
+            <img
+              src="img/maxlite.png"
+              alt="piccado"
+              onClick={() => window.location.reload(false)}
+            />
           </Link>
           <Link
             to={{
@@ -50,7 +63,11 @@ export default class BrandList extends Component {
               state: { pass: "Renacon", pass1: "All" },
             }}
           >
-            <img src="img/renacon.png" alt="piccado" />
+            <img
+              src="img/renacon.png"
+              alt="piccado"
+              onClick={() => window.location.reload(false)}
+            />
           </Link>
           <Link
             to={{
@@ -58,7 +75,11 @@ export default class BrandList extends Component {
               state: { pass: "Thomson Tiles", pass1: "All" },
             }}
           >
-            <img src="img/thomson.png" alt="piccado" />
+            <img
+              src="img/thomson.png"
+              alt="piccado"
+              onClick={() => window.location.reload(false)}
+            />
           </Link>
         </div>
       </div>

@@ -32,9 +32,10 @@ export default class Details extends Component {
               {/* end */}
               {/* product info */}
               <div className="row">
-                <div className="col-10 mx-auto col-md-6 my-3">
-                  <img src={img} className="img-fluid" alt="product" />
+                <div className="col-10 mx-auto col-md-6 my-3 large">
+                  <img src={img} className="img-fluid small" alt="product" />
                 </div>
+
                 {/* product text */}
                 <div className="col-10 mx-auto col-md-6 my-3 text-capitalize">
                   <h2>Model : {title}</h2>
@@ -77,7 +78,19 @@ export default class Details extends Component {
                           display: company === "Lamit" ? "bolck" : "none",
                         }}
                       >
-                        <span> BACK TO LAMIT</span>
+                        <span> LAMIT</span>
+                      </button>
+                    </Link>
+                  </div>
+                  <div className="py-1">
+                    <Link to="/Piccado">
+                      <button
+                        className="button"
+                        style={{
+                          display: company === "Piccado" ? "bolck" : "none",
+                        }}
+                      >
+                        <span> PICCADO</span>
                       </button>
                     </Link>
                   </div>

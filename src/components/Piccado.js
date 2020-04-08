@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-
+import { ProductConsumer } from "../components/context";
+import Product from "./Product";
 export default class Piccado extends Component {
   render() {
     return (
@@ -9,11 +10,11 @@ export default class Piccado extends Component {
           <section className="home-banner-wrap">
             <div className="container">
               <div className="row">
-                <div className="col-md-6">
-                  <img src="img/logo.svg" className="img-fluid pname" alt="" />
+                <div className="col-md-6 ">
+                  <img src="img/logo.svg" className="img-fluid pname " alt="" />
                 </div>
                 <div className="col-md-6">
-                  <figure className="anm-element">
+                  <figure className="anm-element app-logo">
                     <img
                       src="img/p1.png"
                       className="img-fluid back-scnd "
@@ -63,6 +64,23 @@ export default class Piccado extends Component {
             </div>
           </div>
         </section>
+        <div className="container">
+          <div className="row">
+            <ProductConsumer>
+              {(hello) => {
+                return hello.products.map((products) => {
+                  if (products.company === "Piccado") {
+                    if (products.type === "Clay")
+                      return <Product key={products.id} product={products} />;
+                    else if (products.type === "Ceramic") {
+                      return <Product key={products.id} product={products} />;
+                    }
+                  }
+                });
+              }}
+            </ProductConsumer>
+          </div>
+        </div>
       </PiccadoWrapper>
     );
   }
@@ -80,6 +98,7 @@ const PiccadoWrapper = styled.div`
     background: url(img/banner-bg.jpg) center center repeat-x;
     position: relative;
     padding: 100px;
+    height: 500px;
   }
   .home-banner-wrap .pname {
     position: absolute;
@@ -339,6 +358,25 @@ const PiccadoWrapper = styled.div`
 
     .home-banner-wrap figure .back-scnd {
       left: 61%;
+    }
+  }
+  .app-logo {
+    box-sizing: border-box;
+
+    overflow: hidden;
+
+    transform: translatey(0px);
+    animation: float 6s ease-in-out infinite;
+  }
+  @keyframes float {
+    0% {
+      transform: translatey(0px);
+    }
+    50% {
+      transform: translatey(-20px);
+    }
+    100% {
+      transform: translatey(0px);
     }
   }
 `;
