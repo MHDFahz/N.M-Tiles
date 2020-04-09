@@ -65,6 +65,9 @@ export default class ProductList extends Component {
                           <option value="Maxlite AAC Blocks">
                             Maxlite AAC Blocks
                           </option>
+                          <option value="Renacon AAC Blocks">
+                            Renacon AAC Blocks
+                          </option>
                         </select>
                       </div>
                     </label>
@@ -83,6 +86,7 @@ export default class ProductList extends Component {
                           <option value="Ceramic Roofing Tile">
                             Ceramic Roofing Tile
                           </option>
+                          <option value="AAC Blocks">AAC Blocks</option>
                           <option value="Roofing Tile">Roofing Tile</option>
                           <option value="Glass Tile">Glass Tile</option>
                           <option value="Ridge Tile">Ridge Tile</option>
