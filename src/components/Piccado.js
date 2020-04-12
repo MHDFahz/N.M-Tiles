@@ -47,7 +47,7 @@ export default class Piccado extends Component {
             </div>
           </div>
         </section>
-        <section class="product-list-wrap">
+        <section class="product-list-wrap bag">
           <div class="container-fluid">
             <div class="row justify-content-md-center">
               <div class="col-lg-4">
@@ -64,21 +64,23 @@ export default class Piccado extends Component {
             </div>
           </div>
         </section>
-        <div className="container">
-          <div className="row">
-            <ProductConsumer>
-              {(hello) => {
-                return hello.products.map((products) => {
-                  if (products.company === "Piccado") {
-                    if (products.type === "Clay")
-                      return <Product key={products.id} product={products} />;
-                    else if (products.type === "Ceramic") {
-                      return <Product key={products.id} product={products} />;
+        <div className="bag">
+          <div className="container">
+            <div className="row">
+              <ProductConsumer>
+                {(hello) => {
+                  return hello.products.map((products) => {
+                    if (products.company === "Piccado") {
+                      if (products.type === "Clay")
+                        return <Product key={products.id} product={products} />;
+                      else if (products.type === "Ceramic") {
+                        return <Product key={products.id} product={products} />;
+                      }
                     }
-                  }
-                });
-              }}
-            </ProductConsumer>
+                  });
+                }}
+              </ProductConsumer>
+            </div>
           </div>
         </div>
       </PiccadoWrapper>
@@ -99,6 +101,10 @@ const PiccadoWrapper = styled.div`
     position: relative;
     padding: 100px;
     height: 500px;
+  }
+  .bag {
+    background: url(img/banner-bg.jpg) repeat;
+    height: 100%;
   }
   .home-banner-wrap .pname {
     position: absolute;
@@ -172,9 +178,6 @@ const PiccadoWrapper = styled.div`
     background: url(img/pro-b3.png);
   }
 
-  .product-list-wrap {
-    margin: 30px 0;
-  }
   .product-list-wrap .pro-head {
     position: relative;
   }
@@ -183,7 +186,6 @@ const PiccadoWrapper = styled.div`
     font-size: 30px;
     text-align: center;
     color: #4e4e4e;
-    margin-bottom: 60px;
   }
   .product-list-wrap .pro-head .pro-nav {
     position: absolute;
