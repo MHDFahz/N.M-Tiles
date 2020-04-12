@@ -59,6 +59,7 @@ export default class ProductList extends Component {
                           <option value="Calicut Tile Company">
                             Calicut Tile Company
                           </option>
+                          <option value="Standard Tiles">Standard Tiles</option>
                           <option value="Commonwealth">Commonwealth</option>
                           <option value="Wienerberger">Wienerberger</option>
                           <option value="Lamit">Lamit</option>

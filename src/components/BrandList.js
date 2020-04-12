@@ -22,7 +22,7 @@ export default class BrandList extends Component {
           <Link
             to={{
               pathname: "/product",
-              state: { pass: "Standard Tile", pass1: "All" },
+              state: { pass: "Standard Tiles", pass1: "All" },
               refresh: "true",
             }}
           >

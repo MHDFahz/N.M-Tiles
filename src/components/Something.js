@@ -112,7 +112,7 @@ export default class Something extends Component {
               <Link
                 to={{
                   pathname: "/product",
-                  state: { pass: "Maxlite AAC Blocks", pass1: "All" },
+                  state: { pass: "Standard Tiles", pass1: "All" },
                 }}
               >
                 <div className="imgBxzz">
@@ -128,7 +128,7 @@ export default class Something extends Component {
               <Link
                 to={{
                   pathname: "/product",
-                  state: { pass: "Maxlite AAC Blocks", pass1: "All" },
+                  state: { pass: "Renacon AAC Blocks", pass1: "All" },
                 }}
               >
                 <div className="imgBxzz">
@@ -143,8 +143,8 @@ export default class Something extends Component {
             <div className="boxzz">
               <Link
                 to={{
-                  pathname: "/product",
-                  state: { pass: "Maxlite AAC Blocks", pass1: "All" },
+                  pathname: "/Piccado",
+                  state: { pass: "Piccado", pass1: "All" },
                 }}
               >
                 <div className="imgBxzz">
