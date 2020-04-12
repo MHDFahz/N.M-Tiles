@@ -13,6 +13,7 @@ import Modal from "./components/Modal";
 import Footer from "./components/Footer";
 import CompanyProduct from "./components/CompanyProduct";
 import Piccado from "./components/Piccado";
+import StarClay from "./components/StarClay";
 
 class App extends Component {
   render() {
@@ -23,6 +24,7 @@ class App extends Component {
           <Route exact path="/" component={Home}></Route>
           <Route path="/Product" component={ProductList}></Route>
           <Route path="/CompanyProduct" component={CompanyProduct}></Route>
+          <Route path="/StarClay" component={StarClay}></Route>
           <Route path="/Piccado" component={Piccado}></Route>
           <Route path="/Details" component={Details}></Route>
           <Route path="/About" component={About}></Route>

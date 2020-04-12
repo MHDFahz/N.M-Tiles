@@ -16,11 +16,17 @@ export default class BrandList extends Component {
               refresh: "true",
             }}
           >
-            <img
-              src="img/comtrust.png"
-              alt="comtrust"
-              onClick={() => window.location.reload(false)}
-            />
+            <img src="img/comtrust.png" alt="comtrust" />
+          </Link>
+          &nbsp; &nbsp;
+          <Link
+            to={{
+              pathname: "/product",
+              state: { pass: "Standard Tile", pass1: "All" },
+              refresh: "true",
+            }}
+          >
+            <img src="img/standard.png" alt="comtrust" />
           </Link>
           &nbsp; &nbsp;
           <Link
@@ -38,11 +44,7 @@ export default class BrandList extends Component {
               state: { pass: "Wienerberger", pass1: "All" },
             }}
           >
-            <img
-              src="img/weinerberger.png"
-              alt="weinerberger"
-              onClick={() => window.location.reload(false)}
-            />
+            <img src="img/weinerberger.png" alt="weinerberger" />
           </Link>
           &nbsp; &nbsp;
           <Link
@@ -51,11 +53,7 @@ export default class BrandList extends Component {
               state: { pass: "Maxlite AAC Blocks", pass1: "All" },
             }}
           >
-            <img
-              src="img/maxlite.png"
-              alt="piccado"
-              onClick={() => window.location.reload(false)}
-            />
+            <img src="img/maxlite.png" alt="piccado" />
           </Link>
           <Link
             to={{
@@ -63,11 +61,7 @@ export default class BrandList extends Component {
               state: { pass: "Renacon", pass1: "All" },
             }}
           >
-            <img
-              src="img/renacon.png"
-              alt="piccado"
-              onClick={() => window.location.reload(false)}
-            />
+            <img src="img/renacon.png" alt="Renacon" />
           </Link>
           <Link
             to={{
@@ -75,11 +69,25 @@ export default class BrandList extends Component {
               state: { pass: "Thomson Tiles", pass1: "All" },
             }}
           >
-            <img
-              src="img/thomson.png"
-              alt="piccado"
-              onClick={() => window.location.reload(false)}
-            />
+            <img src="img/thomson.png" alt="Thomson Tiles" />
+          </Link>
+          &nbsp; &nbsp;
+          <Link
+            to={{
+              pathname: "/product",
+              state: { pass: "Calicut Tile Company", pass1: "All" },
+            }}
+          >
+            <img src="img/calicut.png" alt="Calicut" />
+          </Link>
+          &nbsp; &nbsp;
+          <Link
+            to={{
+              pathname: "/product",
+              state: { pass: "Star Clay", pass1: "All" },
+            }}
+          >
+            <img src="img/starclay.png" alt="Star Clay" />
           </Link>
         </div>
       </div>

@@ -70,27 +70,62 @@ export default class Details extends Component {
                     </button>
                     &nbsp;&nbsp;&nbsp;&lt;-- Color Change
                   </div>
-                  <div className="py-1">
+                  <div
+                    className="py-1"
+                    style={{
+                      display: company === "Lamit" ? "bolck" : "none",
+                    }}
+                  >
                     <Link to="/CompanyProduct">
-                      <button
-                        className="button"
-                        style={{
-                          display: company === "Lamit" ? "bolck" : "none",
-                        }}
-                      >
+                      <button className="button">
                         <span> LAMIT</span>
                       </button>
                     </Link>
                   </div>
-                  <div className="py-1">
+                  <div
+                    className="py-1"
+                    style={{
+                      display: company === "Piccado" ? "bolck" : "none",
+                    }}
+                  >
                     <Link to="/Piccado">
-                      <button
-                        className="button"
-                        style={{
-                          display: company === "Piccado" ? "bolck" : "none",
-                        }}
-                      >
+                      <button className="button">
                         <span> PICCADO</span>
+                      </button>
+                    </Link>
+                  </div>
+                  <div
+                    className="py-1"
+                    style={{
+                      display: company === "Thomson Tiles" ? "bolck" : "none",
+                    }}
+                  >
+                    <Link
+                      to={{
+                        pathname: "/product",
+                        state: { pass: "Thomson Tiles", pass1: "All" },
+                      }}
+                    >
+                      <button className="button">
+                        <span> Thomson Tiles</span>
+                      </button>
+                    </Link>
+                  </div>
+                  <div
+                    className="py-1"
+                    style={{
+                      display:
+                        company === "Calicut Tile Company" ? "bolck" : "none",
+                    }}
+                  >
+                    <Link
+                      to={{
+                        pathname: "/product",
+                        state: { pass: "Calicut Tile Company", pass1: "All" },
+                      }}
+                    >
+                      <button className="button">
+                        <span> Calicut Tiles</span>
                       </button>
                     </Link>
                   </div>

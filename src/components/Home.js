@@ -19,7 +19,7 @@ export default class Home extends Component {
                 state: { pass: "All", pass1: "All" },
               }}
             >
-              <button className="Btns">shop now</button>
+              <button className="Btns">Our Products</button>
             </NavLink>
             <img
               src="img/since.png"

@@ -42,7 +42,7 @@ export default class ProductList extends Component {
 
                 <div className="col-10 mx-auto text-center text-slanted text-blue">
                   <br />
-                  <BrandList></BrandList>
+
                   <form onSubmit={this.handleSubmit}>
                     <label for="Company">
                       <h3>
@@ -55,6 +55,7 @@ export default class ProductList extends Component {
                           id="Company"
                         >
                           <option value="All">All</option>
+                          <option value="Thomson Tiles">Thomson Tiles</option>
                           <option value="Calicut Tile Company">
                             Calicut Tile Company
                           </option>
@@ -67,6 +68,9 @@ export default class ProductList extends Component {
                           </option>
                           <option value="Renacon AAC Blocks">
                             Renacon AAC Blocks
+                          </option>
+                          <option value="Star Clay Tiles">
+                            Star Clay Tiles
                           </option>
                         </select>
                       </div>
@@ -96,6 +100,13 @@ export default class ProductList extends Component {
                           </option>
                           <option value="Hollow Clay Block">
                             Hollow Clay Block
+                          </option>
+                          <option value="Jolly Bricks">Jolly Bricks</option>
+                          <option value="Perforated Bricks">
+                            Perforated Bricks
+                          </option>
+                          <option value="Mini Roofing Tiles">
+                            Mini Roofing Tiles
                           </option>
                         </select>
                       </div>
@@ -148,6 +159,9 @@ export default class ProductList extends Component {
                   </ProductConsumer>
                 </div>
               </div>
+              <div className="line">
+                <BrandList></BrandList>
+              </div>
             </div>
           </div>
         </Main>
@@ -156,7 +170,22 @@ export default class ProductList extends Component {
   }
 }
 const Main = styled.div`
+  .line {
+    border-top: 2px solid silver;
+  }
   #mainselection select {
+    border: 0 !important;
+    color: #eee !important;
+    background: transparent !important;
+    font-size: 20px !important;
+    font-weight: bold !important;
+    padding: 2px 10px !important;
+    width: 300px !important;
+    *width: 300px !important;
+    *background: #009ffd !important;
+    -webkit-appearance: none !important;
+  }
+  select {
     border: 0 !important;
     color: #eee !important;
     background: transparent !important;
