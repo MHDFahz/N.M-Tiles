@@ -28,7 +28,7 @@ export const storeProducts = [
   {
     id: 3,
     title: "Calicut Roofing Tile\n (Glass Tile)",
-    item: "Glass Tile",
+    item: "Glass Roofing Tile",
     img: "img/product-3.png",
     price: 0,
     company: "Calicut Tile Company",
@@ -66,7 +66,7 @@ export const storeProducts = [
   },
   {
     id: 6,
-    title: "Calicut Roofing Tile\n (Taylor Tile)",
+    title: "Calicut Roofing Tile\n (Ceiling Tile)",
     item: "Ceiling Tile",
     img: "img/product-6.png",
     price: 0,
@@ -79,8 +79,8 @@ export const storeProducts = [
   },
   {
     id: 7,
-    title: "Calicut Roofing Tile\n (Ceiling Tile)",
-    item: "Ceiling Tile",
+    title: "Calicut Roofing Tile\n(Taylor Tile)",
+    item: "Taylor Tile",
     img: "img/product-7.png",
     price: 30,
     company: "Calicut Tile Company",

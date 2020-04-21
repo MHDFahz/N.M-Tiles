@@ -96,6 +96,7 @@ export default class ProductList extends Component {
                           <option value="Glass Tile">Glass Tile</option>
                           <option value="Ridge Tile">Ridge Tile</option>
                           <option value="Ceiling Tile">Ceiling Tile</option>
+                          <option value="Taylor Tile">Taylor Tile</option>
                           <option value="Ventilator Tile">
                             Ventilator Tile
                           </option>
