@@ -11,7 +11,7 @@ export default class ProductList extends Component {
 
     this.state = {
       value: props.location.state.pass,
-      values: "All",
+      values: props.location.state.pass1,
     };
 
     this.handleChange = this.handleChange.bind(this);

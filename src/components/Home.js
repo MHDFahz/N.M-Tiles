@@ -3,7 +3,7 @@ import Luggage from "../roofing.jpg";
 import { NavLink } from "react-router-dom";
 import styled from "styled-components";
 import Something from "./Something";
-
+import Itemslist from "./Itemslist";
 export default class Home extends Component {
   render() {
     return (
@@ -29,7 +29,7 @@ export default class Home extends Component {
             />
           </div>
         </div>
-
+        <Itemslist />
         <Something />
       </HomeStyle>
     );
