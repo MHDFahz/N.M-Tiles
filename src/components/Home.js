@@ -45,6 +45,16 @@ const HomeStyle = styled.div`
     height: 100%;
     position: relative;
   }
+  .Containers:after {
+    content: ""; // ::before and ::after both require content
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(120deg, #eaee44, #33d0ff);
+    opacity: 0.5;
+  }
   .Overlays {
     position: absolute;
     top: 0;
