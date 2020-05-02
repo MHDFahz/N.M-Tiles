@@ -135,7 +135,7 @@ export default class Details extends Component {
                       to={{
                         pathname: "/product",
                         state: {
-                          pass: this.props.location.state.pass,
+                          pass: "All",pass1:"All"
                         },
                       }}
                     >
