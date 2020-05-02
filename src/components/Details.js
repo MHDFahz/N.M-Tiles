@@ -134,9 +134,7 @@ export default class Details extends Component {
                     <Link
                       to={{
                         pathname: "/product",
-                        state: {
-                          pass: "All",pass1:"All"
-                        },
+                        state: {pass: "All",pass1:"All"},
                       }}
                     >
                       <ButtonContainer>Back to Products</ButtonContainer>
