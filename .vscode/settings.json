@@ -1,5 +1,24 @@
 {
   "emmet.includeLanguages": {
     "javascript": "javascriptreact"
-  }
+  },
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#1e4560",
+    "activityBar.activeBorder": "#000000",
+    "activityBar.background": "#1e4560",
+    "activityBar.foreground": "#e7e7e7",
+    "activityBar.inactiveForeground": "#e7e7e799",
+    "activityBarBadge.background": "#000000",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "statusBar.background": "#122939",
+    "statusBar.border": "#122939",
+    "statusBar.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#1e4560",
+    "titleBar.activeBackground": "#122939",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.border": "#122939",
+    "titleBar.inactiveBackground": "#12293999",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#122939"
 }

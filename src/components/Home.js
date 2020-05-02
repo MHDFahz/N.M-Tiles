@@ -40,7 +40,7 @@ const HomeStyle = styled.div`
   position: relative;
   top: 5px;
   .Containers {
-    margin: 1rem 2rem 2rem 2rem;
+    margin-top: -0.3rem;
     background: #ffffff;
     height: 100%;
     position: relative;
